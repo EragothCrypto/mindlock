@@ -1,0 +1,71 @@
+{
+    "version": "1.1.0",
+    "lastUpdated": "2026-01-30",
+    "questions": [
+        {
+            "id": "gist-1",
+            "category": "SKR",
+            "difficulty": "Hard",
+            "question": "When was $SKR officially launched?",
+            "options": [
+                "December 2025",
+                "January 21, 2026",
+                "Q2 2026",
+                "Not yet"
+            ],
+            "correctIndex": 1,
+            "explanation": "$SKR launched with Seeker on January 21, 2026"
+        },
+        {
+            "id": "gist-2",
+            "category": "DePIN",
+            "difficulty": "Medium",
+            "question": "Which DePIN project uses dashcam footage to create maps?",
+            "options": [
+                "Helium",
+                "Render",
+                "Hivemapper",
+                "io.net"
+            ],
+            "correctIndex": 2,
+            "explanation": "Hivemapper builds decentralized maps from dashcam data"
+        },
+        {
+            "id": "gist-3",
+            "category": "LST",
+            "difficulty": "Hard",
+            "question": "What is Sanctum's 'Infinity Pool' used for?",
+            "options": [
+                "NFT liquidity",
+                "Instant LST-to-LST swaps",
+                "Governance",
+                "Airdrops"
+            ],
+            "correctIndex": 1,
+            "explanation": "The Infinity Pool enables instant swaps between any LSTs"
+        },
+        {
+            "id": "sponsored-sanctum-1",
+            "category": "LST",
+            "difficulty": "Medium",
+            "question": "Which LST protocol allows you to create your own liquid staking token?",
+            "options": [
+                "Lido",
+                "Marinade",
+                "Sanctum",
+                "Jito"
+            ],
+            "correctIndex": 2,
+            "explanation": "Sanctum lets anyone create their own LST with the Infinity Pool!",
+            "isSponsored": true,
+            "sponsor": "Sanctum"
+        }
+    ],
+    "sponsoredQuestions": [
+        {
+            "id": "sponsored-sanctum-1",
+            "sponsor": "Sanctum",
+            "description": "Sanctum LST awareness campaign"
+        }
+    ]
+}

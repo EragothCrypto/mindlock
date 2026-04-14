@@ -1,0 +1,32 @@
+# Rust/Anchor
+target/
+.anchor/
+
+# Node (scripts + RN)
+node_modules/
+
+# NEVER commit keypairs or secrets
+authority.json
+*.keypair.json
+.env
+
+# Build logs / debug artifacts
+*.txt
+!.env.example
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Android build artifacts (RN project has its own .gitignore)
+Mindlock/android/app/build/
+Mindlock/android/.gradle/
+Mindlock/android/build/
+
+# React Native
+Mindlock/node_modules/
