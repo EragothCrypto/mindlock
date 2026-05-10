@@ -11,6 +11,27 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+    <!-- Required on Android 11+ to query installed packages (Package Visibility API) -->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <!-- Explicitly declare brain-rot packages for Android 11+ visibility -->
+    <queries>
+        <package android:name="com.zhiliaoapp.musically" />    <!-- TikTok -->
+        <package android:name="com.ss.android.ugc.trill" />    <!-- TikTok (alt) -->
+        <package android:name="com.instagram.android" />       <!-- Instagram -->
+        <package android:name="com.twitter.android" />         <!-- X (Twitter) -->
+        <package android:name="com.google.android.youtube" />  <!-- YouTube -->
+        <package android:name="com.reddit.frontpage" />        <!-- Reddit -->
+        <package android:name="com.snapchat.android" />        <!-- Snapchat -->
+        <package android:name="com.facebook.katana" />         <!-- Facebook -->
+        <package android:name="com.facebook.lite" />           <!-- Facebook Lite -->
+        <!-- Also allow querying all launcher intents for the app picker -->
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+    </queries>
 
     <application
       android:name=".MainApplication"
